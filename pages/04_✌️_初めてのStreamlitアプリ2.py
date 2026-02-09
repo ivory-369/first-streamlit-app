@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 # タイトルを表示
 st.title("Streamlit デモアプリ")
@@ -39,7 +40,7 @@ size = st.radio("サイズを選択", ["S", "M", "L"])
 
 st.write(f"選んだのは: {option} の {size} サイズです。")
 
-import pandas as pd
+
 
 st.title("データの表示")
 
@@ -97,3 +98,4 @@ if increment:
     st.session_state.count += 1
 
 st.write(f"現在のカウント: {st.session_state.count}")
+
